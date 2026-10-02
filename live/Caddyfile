@@ -1,0 +1,15 @@
+:8081 {
+	@api path /api /api/*
+	handle @api {
+		reverse_proxy localhost:8080
+	}
+
+	@ws path /ws /ws/*
+	handle @ws {
+		reverse_proxy localhost:8080
+	}
+
+	handle {
+		reverse_proxy localhost:3000
+	}
+}

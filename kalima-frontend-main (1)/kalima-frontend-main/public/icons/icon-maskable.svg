@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="كلمة">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1a30"/>
+      <stop offset="100%" stop-color="#0b1426"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dd76"/>
+      <stop offset="45%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8941f"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g fill="url(#gold)">
+    <rect x="246" y="156" width="20" height="196" rx="10"/>
+    <rect x="136" y="188" width="240" height="16" rx="8"/>
+    <path d="M188 204 L188 258 Q188 288 158 288 Q128 288 128 258 L128 238 Q128 204 158 204 Q188 204 188 238 Z"/>
+    <path d="M324 204 L324 258 Q324 288 354 288 Q384 288 384 258 L384 238 Q384 204 354 204 Q324 204 324 238 Z"/>
+    <path d="M204 352 H308 L292 378 H220 Z"/>
+    <rect x="236" y="378" width="40" height="14" rx="7"/>
+  </g>
+</svg>

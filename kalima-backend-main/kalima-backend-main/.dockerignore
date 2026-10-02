@@ -1,0 +1,13 @@
+target/
+.git/
+.gitignore
+.env
+.env.*
+!.env.example
+*.log
+.idea/
+.vscode/
+.cursor/
+full-test-run.log
+**/*.md
+**/node_modules/

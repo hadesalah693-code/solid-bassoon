@@ -1,0 +1,49 @@
+# Render Blueprint — kalima-api + kalima-db (free tier).
+
+databases:
+  - name: kalima-db
+    plan: free
+    databaseName: kalima
+
+services:
+  - type: web
+    name: kalima-api
+    runtime: docker
+    plan: free
+    repo: https://github.com/hadesalah693-code/kalima-backend
+    branch: main
+    dockerfilePath: ./Dockerfile.render
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://kalima-frontend.vercel.app,https://kalima-frontend-hadesalah693-codes-projects.vercel.app,https://kalima-frontend-git-main-hadesalah693-codes-projects.vercel.app
+      - key: KALIMA_AUTH_REFRESH_COOKIE_SAME_SITE
+        value: None
+      - key: JAVA_OPTS
+        value: -XX:+UseContainerSupport -Xms64m -Xmx180m -Xss512k -XX:+UseSerialGC -XX:MaxMetaspaceSize=96m -XX:ReservedCodeCacheSize=32m
+      - key: DATABASE_URL
+        fromDatabase:
+          name: kalima-db
+          property: connectionString
+      - key: DB_USERNAME
+        fromDatabase:
+          name: kalima-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: kalima-db
+          property: password
+      - key: JWT_SECRET
+        generateValue: true
+      - key: INIT_ADMIN_ENABLED
+        value: "true"
+      - key: INIT_ADMIN_EMAIL
+        value: admin@kalima.com
+      - key: INIT_ADMIN_PASSWORD
+        value: KalimaAdmin2026!
+      - key: INIT_ADMIN_RESET_PASSWORD
+        value: "false"
+      - key: INIT_ADMIN_NAME
+        value: مدير النظام

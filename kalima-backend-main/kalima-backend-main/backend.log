@@ -1,0 +1,1994 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.13)
+
+2026-04-21T10:55:47.645+02:00  INFO 13076 --- [kalima-backend] [           main] c.k.backend.KalimaBackendApplication     : Starting KalimaBackendApplication using Java 17.0.18 with PID 13076 (E:\kalima-backend\target\classes started by hp in E:\kalima-backend)
+2026-04-21T10:55:47.656+02:00  INFO 13076 --- [kalima-backend] [           main] c.k.backend.KalimaBackendApplication     : The following 1 profile is active: "dev"
+2026-04-21T10:55:50.923+02:00  INFO 13076 --- [kalima-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-21T10:55:51.284+02:00  INFO 13076 --- [kalima-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 334 ms. Found 8 JPA repository interfaces.
+2026-04-21T10:55:53.565+02:00  INFO 13076 --- [kalima-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-04-21T10:55:53.594+02:00  INFO 13076 --- [kalima-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-21T10:55:53.595+02:00  INFO 13076 --- [kalima-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.53]
+2026-04-21T10:55:53.713+02:00  INFO 13076 --- [kalima-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-21T10:55:53.716+02:00  INFO 13076 --- [kalima-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5922 ms
+2026-04-21T10:55:54.466+02:00  INFO 13076 --- [kalima-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-21T10:55:54.877+02:00  INFO 13076 --- [kalima-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@374c3975
+2026-04-21T10:55:54.995+02:00  INFO 13076 --- [kalima-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-21T10:55:55.050+02:00  INFO 13076 --- [kalima-backend] [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/kalima_db (PostgreSQL 16.13)
+2026-04-21T10:55:55.282+02:00  INFO 13076 --- [kalima-backend] [           main] o.f.core.internal.command.DbValidate     : Successfully validated ?? migrations (execution time ??:??.???s)
+2026-04-21T10:55:55.327+02:00  INFO 13076 --- [kalima-backend] [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 9
+2026-04-21T10:55:55.347+02:00  INFO 13076 --- [kalima-backend] [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "10 - case participants"
+2026-04-21T10:55:55.736+02:00  INFO 13076 --- [kalima-backend] [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v10 (execution time ??:??.???s)
+2026-04-21T10:55:55.928+02:00  INFO 13076 --- [kalima-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-21T10:55:56.119+02:00  INFO 13076 --- [kalima-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-04-21T10:55:56.263+02:00  INFO 13076 --- [kalima-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-21T10:55:56.775+02:00  INFO 13076 --- [kalima-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-21T10:55:56.946+02:00  WARN 13076 --- [kalima-backend] [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-21T10:55:56.976+02:00  INFO 13076 --- [kalima-backend] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.13
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-21T10:55:59.330+02:00  INFO 13076 --- [kalima-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-21T10:55:59.434+02:00  INFO 13076 --- [kalima-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-21T10:56:00.008+02:00  INFO 13076 --- [kalima-backend] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-21T10:56:00.918+02:00  INFO 13076 --- [kalima-backend] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-04-21T10:56:02.686+02:00  WARN 13076 --- [kalima-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-21T10:56:04.118+02:00  INFO 13076 --- [kalima-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-04-21T10:56:04.146+02:00  INFO 13076 --- [kalima-backend] [           main] c.k.backend.KalimaBackendApplication     : Started KalimaBackendApplication in 17.55 seconds (process running for 18.402)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.is_active,
+        c1_0.address,
+        c1_0.commercial_register,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.legal_name,
+        c1_0.name,
+        c1_0.phone,
+        c1_0.tax_number,
+        c1_0.updated_at 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.email=?
+2026-04-21T10:56:04.648+02:00  INFO 13076 --- [kalima-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-21T10:56:04.648+02:00  INFO 13076 --- [kalima-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-21T10:56:04.663+02:00  INFO 13076 --- [kalima-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.email=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.is_active,
+        c1_0.address,
+        c1_0.commercial_register,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.legal_name,
+        c1_0.name,
+        c1_0.phone,
+        c1_0.tax_number,
+        c1_0.updated_at 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.email=?
+Hibernate: 
+    update
+        persons 
+    set
+        is_active=?,
+        address=?,
+        commercial_register=?,
+        company_name=?,
+        created_at=?,
+        email=?,
+        full_name=?,
+        last_login_at=?,
+        national_id=?,
+        notes=?,
+        password_hash=?,
+        person_type=?,
+        phone=?,
+        system_role=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.email=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.is_active,
+        c1_0.address,
+        c1_0.commercial_register,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.legal_name,
+        c1_0.name,
+        c1_0.phone,
+        c1_0.tax_number,
+        c1_0.updated_at 
+    from
+        companies c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.email=?
+Hibernate: 
+    update
+        persons 
+    set
+        is_active=?,
+        address=?,
+        commercial_register=?,
+        company_name=?,
+        created_at=?,
+        email=?,
+        full_name=?,
+        last_login_at=?,
+        national_id=?,
+        notes=?,
+        password_hash=?,
+        person_type=?,
+        phone=?,
+        system_role=?,
+        updated_at=? 
+    where
+        id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and (
+            ? is null 
+            or cf1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or cf1_0.client_id=?
+        ) 
+        and (
+            ? is null 
+            or cf1_0.assigned_lawyer_id=?
+        ) 
+        and (
+            ?=true 
+            or cf1_0.archived_at is null
+        ) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+2026-04-21T10:58:13.606+02:00  WARN 13076 --- [kalima-backend] [nio-8080-exec-6] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+    order by
+        cp1_0.role,
+        cp1_0.created_at
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(cf1_0.id)>0 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.case_number=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    insert 
+    into
+        cases
+        (archived_at, assigned_lawyer_id, case_number, case_type, client_id, close_date, company_id, court_case_number, created_at, created_by, description, start_date, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+    order by
+        cp1_0.role,
+        cp1_0.created_at
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        count(cf1_0.id)>0 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.case_number=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    insert 
+    into
+        cases
+        (archived_at, assigned_lawyer_id, case_number, case_type, client_id, close_date, company_id, court_case_number, created_at, created_by, description, start_date, status, title, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+    order by
+        cp1_0.role,
+        cp1_0.created_at
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+    order by
+        cp1_0.role,
+        cp1_0.created_at
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.id=?
+Hibernate: 
+    delete 
+    from
+        case_participants 
+    where
+        id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+    order by
+        cp1_0.role,
+        cp1_0.created_at
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and (
+            ? is null 
+            or cf1_0.status=?
+        ) 
+        and (
+            ? is null 
+            or cf1_0.client_id=?
+        ) 
+        and (
+            ? is null 
+            or cf1_0.assigned_lawyer_id=?
+        ) 
+        and (
+            ?=true 
+            or cf1_0.archived_at is null
+        ) 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        cf1_0.id,
+        cf1_0.archived_at,
+        cf1_0.assigned_lawyer_id,
+        cf1_0.case_number,
+        cf1_0.case_type,
+        cf1_0.client_id,
+        cf1_0.close_date,
+        cf1_0.company_id,
+        cf1_0.court_case_number,
+        cf1_0.created_at,
+        cf1_0.created_by,
+        cf1_0.description,
+        cf1_0.start_date,
+        cf1_0.status,
+        cf1_0.title,
+        cf1_0.updated_at 
+    from
+        cases cf1_0 
+    where
+        cf1_0.company_id = ? 
+        and cf1_0.id=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.id=?
+Hibernate: 
+    select
+        count(cp1_0.id)>0 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.case_id=? 
+        and cp1_0.person_id=? 
+        and cp1_0.role=?
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.email=?
+Hibernate: 
+    insert 
+    into
+        case_participants
+        (case_id, company_id, created_at, created_by, notes, person_id, role, updated_at, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        cp1_0.id,
+        cp1_0.case_id,
+        cp1_0.company_id,
+        cp1_0.created_at,
+        cp1_0.created_by,
+        cp1_0.notes,
+        cp1_0.person_id,
+        cp1_0.role,
+        cp1_0.updated_at 
+    from
+        case_participants cp1_0 
+    where
+        cp1_0.company_id = ? 
+        and cp1_0.id=?
+2026-04-21T11:07:08.682+02:00  WARN 13076 --- [kalima-backend] [nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.kalima.backend.caseparticipant.dto.ParticipantResponse> com.kalima.backend.caseparticipant.controller.CaseParticipantController.add(java.util.UUID,com.kalima.backend.caseparticipant.dto.ParticipantAddRequest,org.springframework.web.util.UriComponentsBuilder): [Field error in object 'participantAddRequest' on field 'personId': rejected value [null]; codes [NotNull.participantAddRequest.personId,NotNull.personId,NotNull.java.util.UUID,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [participantAddRequest.personId,personId]; arguments []; default message [personId]]; default message [personId is required]] ]
+Hibernate: 
+    select
+        p1_0.id,
+        p1_0.is_active,
+        p1_0.address,
+        p1_0.commercial_register,
+        p1_0.company_id,
+        p1_0.company_name,
+        p1_0.created_at,
+        p1_0.email,
+        p1_0.full_name,
+        p1_0.last_login_at,
+        p1_0.national_id,
+        p1_0.notes,
+        p1_0.password_hash,
+        p1_0.person_type,
+        p1_0.phone,
+        p1_0.system_role,
+        p1_0.updated_at 
+    from
+        persons p1_0 
+    where
+        p1_0.company_id = ? 
+        and p1_0.system_role=? 
+    fetch
+        first ? rows only
+2026-04-21T11:38:47.830+02:00  WARN 13076 --- [kalima-backend] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m52s57ms262µs200ns).
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.13:run (default-cli) on project kalima-backend: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

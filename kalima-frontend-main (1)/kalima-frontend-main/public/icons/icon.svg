@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="كلمة">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1a30"/>
+      <stop offset="100%" stop-color="#0b1426"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dd76"/>
+      <stop offset="45%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#b8941f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="230" r="150" fill="url(#glow)"/>
+  <g fill="url(#gold)">
+    <rect x="246" y="132" width="20" height="228" rx="10"/>
+    <rect x="118" y="168" width="276" height="18" rx="9"/>
+    <path d="M176 186 L176 248 Q176 286 138 286 Q100 286 100 248 L100 224 Q100 186 138 186 Q176 186 176 224 Z"/>
+    <path d="M336 186 L336 248 Q336 286 374 286 Q412 286 412 248 L412 224 Q412 186 374 186 Q336 186 336 224 Z"/>
+    <path d="M188 360 H324 L304 392 H208 Z"/>
+    <rect x="228" y="392" width="56" height="16" rx="8"/>
+  </g>
+</svg>

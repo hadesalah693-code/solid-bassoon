@@ -1,0 +1,627 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.kalima:kalima-backend >----------------------
+[INFO] Building  0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ kalima-backend ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 59 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ kalima-backend ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 447 source files with javac [debug parameters release 17] to target\classes
+[INFO] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentBrainService.java: C:\Users\Dell\Desktop\kalma\kalima-backend-main\kalima-backend-main\src\main\java\com\kalima\backend\agent\tools\AgentBrainService.java uses unchecked or unsafe operations.
+[INFO] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentBrainService.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/auth/seed/DemoTrialAccounts.java:[24,32] variable PORTAL_USER_EMAIL is already defined in class com.kalima.backend.auth.seed.DemoTrialAccounts
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/auth/seed/DemoTrialAccounts.java:[25,32] variable PORTAL_USER_PASSWORD is already defined in class com.kalima.backend.auth.seed.DemoTrialAccounts
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[31,49] cannot find symbol
+  symbol:   method getMemoryValue()
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[46,63] cannot find symbol
+  symbol:   method getId()
+  location: variable person of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[49,22] cannot find symbol
+  symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[50,22] cannot find symbol
+  symbol:   method setPerson(com.kalima.backend.domain.entity.Person)
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[51,22] cannot find symbol
+  symbol:   method setMemoryKey(java.lang.String)
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[54,12] cannot find symbol
+  symbol:   method setMemoryValue(java.lang.String)
+  location: variable row of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[64,72] cannot find symbol
+  symbol:   method getMemoryKey()
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[66,42] cannot find symbol
+  symbol:   method getMemoryKey()
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[67,43] cannot find symbol
+  symbol:   method getMemoryValue()
+  location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[71,12] cannot find symbol
+  symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[72,12] cannot find symbol
+  symbol:   method setPerson(com.kalima.backend.domain.entity.Person)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[73,12] cannot find symbol
+  symbol:   method setToolName(java.lang.String)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[74,12] cannot find symbol
+  symbol:   method setToolParams(java.lang.String)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[75,12] cannot find symbol
+  symbol:   method setSummary(java.lang.String)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[76,12] cannot find symbol
+  symbol:   method setConfidence(double)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[77,12] cannot find symbol
+  symbol:   method setExpiresAt(java.time.LocalDateTime)
+  location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[82,86] cannot find symbol
+  symbol:   method getId()
+  location: variable person of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[89,34] cannot find symbol
+  symbol:   method getToolName()
+  location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[102,56] cannot find symbol
+  symbol:   method getToolParams()
+  location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[106,20] cannot find symbol
+  symbol:   method setExecutedAt(java.time.LocalDateTime)
+  location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[167,28] cannot find symbol
+  symbol:   method getCaseFile()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[174,35] cannot find symbol
+  symbol:   method getId()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[175,33] cannot find symbol
+  symbol:   method getId()
+  location: variable cf of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[176,37] cannot find symbol
+  symbol:   method getCaseNumber()
+  location: variable cf of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[177,37] cannot find symbol
+  symbol:   method getHearingDate()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[178,35] cannot find symbol
+  symbol:   method getCourtName()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[245,28] cannot find symbol
+  symbol:   method getId()
+  location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[282,44] cannot find symbol
+  symbol:   method getSystemRole()
+  location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[283,35] cannot find symbol
+  symbol:   method getId()
+  location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[345,19] cannot find symbol
+  symbol:   method getCaseFile()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[349,30] cannot find symbol
+  symbol:   method getHearingDate()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[350,31] cannot find symbol
+  symbol:   method getCourtName()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[351,33] cannot find symbol
+  symbol:   method getChamber()
+  location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[391,30] cannot find symbol
+  symbol:   method getDelegationNumber()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[393,30] cannot find symbol
+  symbol:   method getTitle()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[395,30] cannot find symbol
+  symbol:   method getStatus()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[397,30] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[397,90] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[422,31] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[423,30] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[424,30] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[434,30] cannot find symbol
+  symbol:   method getDelegationNumber()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[436,30] cannot find symbol
+  symbol:   method getTitle()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[438,30] cannot find symbol
+  symbol:   method getExpiresAt()
+  location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[458,30] cannot find symbol
+  symbol:   method getDisputeNumber()
+  location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[460,30] cannot find symbol
+  symbol:   method getTitle()
+  location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[462,30] cannot find symbol
+  symbol:   method getOpponentName()
+  location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[464,39] cannot find symbol
+  symbol:   method getConvertedCase()
+  location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[465,30] cannot find symbol
+  symbol:   method getConvertedCase()
+  location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[105,15] cannot find symbol
+  symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[106,15] cannot find symbol
+  symbol:   method setCaseNumber(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[107,15] cannot find symbol
+  symbol:   method setCourtCaseNumber(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[108,15] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[109,15] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[110,15] cannot find symbol
+  symbol:   method setCaseType(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[111,15] cannot find symbol
+  symbol:   method setCourtName(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[112,15] cannot find symbol
+  symbol:   method setCourtCircuit(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[113,15] cannot find symbol
+  symbol:   method setProcedureStage(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[114,15] cannot find symbol
+  symbol:   method setStatus(request.st[...]tus())
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[117,15] cannot find symbol
+  symbol:   method setStartDate(java.time.LocalDate)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[118,15] cannot find symbol
+  symbol:   method setClient(com.kalima.backend.domain.entity.Person)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[119,15] cannot find symbol
+  symbol:   method setAssignedLawyer(com.kalima.backend.domain.entity.Person)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[120,15] cannot find symbol
+  symbol:   method setCreatedBy(com.kalima.backend.domain.entity.Person)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[121,15] cannot find symbol
+  symbol:   method setDisputePathType(com.kalima.backend.domain.entity.DomainEnums.DisputePathType)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[135,34] cannot find symbol
+  symbol:   method getId()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[137,44] cannot find symbol
+  symbol:   method getCaseNumber()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[138,39] cannot find symbol
+  symbol:   method getTitle()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[139,40] cannot find symbol
+  symbol:   method getStatus()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[140,42] cannot find symbol
+  symbol:   method getClient()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[141,73] cannot find symbol
+  symbol:   method getId()
+  location: variable lawyer of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[142,49] cannot find symbol
+  symbol:   method getDisputePathType()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[144,40] cannot find symbol
+  symbol:   method getDisputePathType()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[147,74] cannot find symbol
+  symbol:   method getDisputePathType()
+  location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[161,18] cannot find symbol
+  symbol:   method getSystemRole()
+  location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[163,38] cannot find symbol
+  symbol:   method getId()
+  location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[198,25] cannot find symbol
+  symbol:   method getSystemRole()
+  location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[207,25] cannot find symbol
+  symbol:   method getActorPerson()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[209,18] cannot find symbol
+  symbol:   method getId()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[210,18] cannot find symbol
+  symbol:   method getAction()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[211,18] cannot find symbol
+  symbol:   method getEntityType()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[212,18] cannot find symbol
+  symbol:   method getEntityId()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[213,38] cannot find symbol
+  symbol:   method getId()
+  location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[214,38] cannot find symbol
+  symbol:   method getFullName()
+  location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[215,18] cannot find symbol
+  symbol:   method getActorEmail()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[216,18] cannot find symbol
+  symbol:   method getMetadata()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[217,18] cannot find symbol
+  symbol:   method isSuccess()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[218,18] cannot find symbol
+  symbol:   method getCreatedAt()
+  location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[224,19] cannot find symbol
+  symbol:   method getArchivedAt()
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[229,34] cannot find symbol
+  symbol:   method getAssignedLawyer()
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[230,32] cannot find symbol
+  symbol:   method getAssignedLawyer()
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[232,15] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[233,15] cannot find symbol
+  symbol:   method setCourtCaseNumber(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[234,15] cannot find symbol
+  symbol:   method setDescription(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[235,15] cannot find symbol
+  symbol:   method setCaseType(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[236,15] cannot find symbol
+  symbol:   method setCourtName(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[237,15] cannot find symbol
+  symbol:   method setCourtCircuit(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[238,15] cannot find symbol
+  symbol:   method setProcedureStage(java.lang.String)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[239,15] cannot find symbol
+  symbol:   method setStartDate(java.time.LocalDate)
+  location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.148 s
+[INFO] Finished at: 2026-09-23T02:13:39+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project kalima-backend: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/auth/seed/DemoTrialAccounts.java:[24,32] variable PORTAL_USER_EMAIL is already defined in class com.kalima.backend.auth.seed.DemoTrialAccounts
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/auth/seed/DemoTrialAccounts.java:[25,32] variable PORTAL_USER_PASSWORD is already defined in class com.kalima.backend.auth.seed.DemoTrialAccounts
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[31,49] cannot find symbol
+[ERROR]   symbol:   method getMemoryValue()
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[46,63] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable person of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[49,22] cannot find symbol
+[ERROR]   symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[50,22] cannot find symbol
+[ERROR]   symbol:   method setPerson(com.kalima.backend.domain.entity.Person)
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[51,22] cannot find symbol
+[ERROR]   symbol:   method setMemoryKey(java.lang.String)
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[54,12] cannot find symbol
+[ERROR]   symbol:   method setMemoryValue(java.lang.String)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[64,72] cannot find symbol
+[ERROR]   symbol:   method getMemoryKey()
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[66,42] cannot find symbol
+[ERROR]   symbol:   method getMemoryKey()
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentMemoryService.java:[67,43] cannot find symbol
+[ERROR]   symbol:   method getMemoryValue()
+[ERROR]   location: variable m of type com.kalima.backend.agent.memory.AgentMemory
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[71,12] cannot find symbol
+[ERROR]   symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[72,12] cannot find symbol
+[ERROR]   symbol:   method setPerson(com.kalima.backend.domain.entity.Person)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[73,12] cannot find symbol
+[ERROR]   symbol:   method setToolName(java.lang.String)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[74,12] cannot find symbol
+[ERROR]   symbol:   method setToolParams(java.lang.String)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[75,12] cannot find symbol
+[ERROR]   symbol:   method setSummary(java.lang.String)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[76,12] cannot find symbol
+[ERROR]   symbol:   method setConfidence(double)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[77,12] cannot find symbol
+[ERROR]   symbol:   method setExpiresAt(java.time.LocalDateTime)
+[ERROR]   location: variable row of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[82,86] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable person of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[89,34] cannot find symbol
+[ERROR]   symbol:   method getToolName()
+[ERROR]   location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[102,56] cannot find symbol
+[ERROR]   symbol:   method getToolParams()
+[ERROR]   location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/memory/AgentPendingActionService.java:[106,20] cannot find symbol
+[ERROR]   symbol:   method setExecutedAt(java.time.LocalDateTime)
+[ERROR]   location: variable pending of type com.kalima.backend.agent.memory.AgentPendingAction
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[167,28] cannot find symbol
+[ERROR]   symbol:   method getCaseFile()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[174,35] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[175,33] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable cf of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[176,37] cannot find symbol
+[ERROR]   symbol:   method getCaseNumber()
+[ERROR]   location: variable cf of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[177,37] cannot find symbol
+[ERROR]   symbol:   method getHearingDate()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[178,35] cannot find symbol
+[ERROR]   symbol:   method getCourtName()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[245,28] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[282,44] cannot find symbol
+[ERROR]   symbol:   method getSystemRole()
+[ERROR]   location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[283,35] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: class com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[345,19] cannot find symbol
+[ERROR]   symbol:   method getCaseFile()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[349,30] cannot find symbol
+[ERROR]   symbol:   method getHearingDate()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[350,31] cannot find symbol
+[ERROR]   symbol:   method getCourtName()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[351,33] cannot find symbol
+[ERROR]   symbol:   method getChamber()
+[ERROR]   location: variable h of type com.kalima.backend.hearing.entity.Hearing
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[391,30] cannot find symbol
+[ERROR]   symbol:   method getDelegationNumber()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[393,30] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[395,30] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[397,30] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[397,90] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[422,31] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[423,30] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[424,30] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[434,30] cannot find symbol
+[ERROR]   symbol:   method getDelegationNumber()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[436,30] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[438,30] cannot find symbol
+[ERROR]   symbol:   method getExpiresAt()
+[ERROR]   location: variable d of type com.kalima.backend.delegation.entity.Delegation
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[458,30] cannot find symbol
+[ERROR]   symbol:   method getDisputeNumber()
+[ERROR]   location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[460,30] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[462,30] cannot find symbol
+[ERROR]   symbol:   method getOpponentName()
+[ERROR]   location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[464,39] cannot find symbol
+[ERROR]   symbol:   method getConvertedCase()
+[ERROR]   location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/agent/tools/AgentToolExecutor.java:[465,30] cannot find symbol
+[ERROR]   symbol:   method getConvertedCase()
+[ERROR]   location: variable d of type com.kalima.backend.dispute.entity.Dispute
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[105,15] cannot find symbol
+[ERROR]   symbol:   method setCompany(com.kalima.backend.domain.entity.Company)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[106,15] cannot find symbol
+[ERROR]   symbol:   method setCaseNumber(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[107,15] cannot find symbol
+[ERROR]   symbol:   method setCourtCaseNumber(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[108,15] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[109,15] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[110,15] cannot find symbol
+[ERROR]   symbol:   method setCaseType(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[111,15] cannot find symbol
+[ERROR]   symbol:   method setCourtName(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[112,15] cannot find symbol
+[ERROR]   symbol:   method setCourtCircuit(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[113,15] cannot find symbol
+[ERROR]   symbol:   method setProcedureStage(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[114,15] cannot find symbol
+[ERROR]   symbol:   method setStatus(request.st[...]tus())
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[117,15] cannot find symbol
+[ERROR]   symbol:   method setStartDate(java.time.LocalDate)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[118,15] cannot find symbol
+[ERROR]   symbol:   method setClient(com.kalima.backend.domain.entity.Person)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[119,15] cannot find symbol
+[ERROR]   symbol:   method setAssignedLawyer(com.kalima.backend.domain.entity.Person)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[120,15] cannot find symbol
+[ERROR]   symbol:   method setCreatedBy(com.kalima.backend.domain.entity.Person)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[121,15] cannot find symbol
+[ERROR]   symbol:   method setDisputePathType(com.kalima.backend.domain.entity.DomainEnums.DisputePathType)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[135,34] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[137,44] cannot find symbol
+[ERROR]   symbol:   method getCaseNumber()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[138,39] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[139,40] cannot find symbol
+[ERROR]   symbol:   method getStatus()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[140,42] cannot find symbol
+[ERROR]   symbol:   method getClient()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[141,73] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable lawyer of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[142,49] cannot find symbol
+[ERROR]   symbol:   method getDisputePathType()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[144,40] cannot find symbol
+[ERROR]   symbol:   method getDisputePathType()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[147,74] cannot find symbol
+[ERROR]   symbol:   method getDisputePathType()
+[ERROR]   location: variable saved of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[161,18] cannot find symbol
+[ERROR]   symbol:   method getSystemRole()
+[ERROR]   location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[163,38] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[198,25] cannot find symbol
+[ERROR]   symbol:   method getSystemRole()
+[ERROR]   location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[207,25] cannot find symbol
+[ERROR]   symbol:   method getActorPerson()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[209,18] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[210,18] cannot find symbol
+[ERROR]   symbol:   method getAction()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[211,18] cannot find symbol
+[ERROR]   symbol:   method getEntityType()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[212,18] cannot find symbol
+[ERROR]   symbol:   method getEntityId()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[213,38] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[214,38] cannot find symbol
+[ERROR]   symbol:   method getFullName()
+[ERROR]   location: variable actor of type com.kalima.backend.domain.entity.Person
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[215,18] cannot find symbol
+[ERROR]   symbol:   method getActorEmail()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[216,18] cannot find symbol
+[ERROR]   symbol:   method getMetadata()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[217,18] cannot find symbol
+[ERROR]   symbol:   method isSuccess()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[218,18] cannot find symbol
+[ERROR]   symbol:   method getCreatedAt()
+[ERROR]   location: variable a of type com.kalima.backend.audit.entity.AuditLog
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[224,19] cannot find symbol
+[ERROR]   symbol:   method getArchivedAt()
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[229,34] cannot find symbol
+[ERROR]   symbol:   method getAssignedLawyer()
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[230,32] cannot find symbol
+[ERROR]   symbol:   method getAssignedLawyer()
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[232,15] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[233,15] cannot find symbol
+[ERROR]   symbol:   method setCourtCaseNumber(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[234,15] cannot find symbol
+[ERROR]   symbol:   method setDescription(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[235,15] cannot find symbol
+[ERROR]   symbol:   method setCaseType(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[236,15] cannot find symbol
+[ERROR]   symbol:   method setCourtName(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[237,15] cannot find symbol
+[ERROR]   symbol:   method setCourtCircuit(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[238,15] cannot find symbol
+[ERROR]   symbol:   method setProcedureStage(java.lang.String)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] /C:/Users/Dell/Desktop/kalma/kalima-backend-main/kalima-backend-main/src/main/java/com/kalima/backend/casefile/service/CaseService.java:[239,15] cannot find symbol
+[ERROR]   symbol:   method setStartDate(java.time.LocalDate)
+[ERROR]   location: variable entity of type com.kalima.backend.casefile.entity.CaseFile
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
